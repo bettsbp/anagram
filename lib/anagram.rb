@@ -14,12 +14,14 @@ class Words
     downcase_string_2 = @word_array_2.sort.join("")
     print downcase_string_1
     print downcase_string_2
-    if (downcase_string_1.include?(/[aeoui]/) && downcase_string_2.include?(/[aeoui]/))
-      if downcase_string_1 == downcase_array_2
+    if ((downcase_string_1 =~ /aeiou/).nil? && (downcase_string_2 =~ /aeiou/).nil?) === true
+      if downcase_string_1 == downcase_string_2
         true
       else
         false
       end
+    else
+      "Please enter a real word!"
     end
   end
 end
