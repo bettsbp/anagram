@@ -21,7 +21,7 @@ describe("Anagram#check_if_anagram") do
   end
   it("will see if the words have vowels") do
     words_to_test = Words.new("blp","cwtsh")
-    expect(words_to_test.check_if_anagram).to(eq("Please enter a real word!"))
+    expect(words_to_test.check_if_anagram).to(eq("Please enter real words"))
   end
   it("will work with multiple words") do
     words_to_test = Words.new("school master","the classroom")
