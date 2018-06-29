@@ -20,7 +20,7 @@ describe("Anagram#check_if_anagram") do
     expect(words_to_test.check_if_anagram).to(eq("These words are antigrams"))
   end
   it("will see if the words have vowels") do
-    words_to_test = Words.new("blp","cwtsh")
+    words_to_test = Words.new("blop","cwtsh")
     expect(words_to_test.check_if_anagram).to(eq("Please enter real words"))
   end
   it("will work with multiple words") do
