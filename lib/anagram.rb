@@ -10,21 +10,16 @@ class Words
 
   # first method
   def check_if_anagram
-    downcase_array_1 = @word_array_1.sort
-    downcase_array_2 = @word_array_2.sort
-    puts downcase_array_1
-    if downcase_array_1 == downcase_array_2
-      true
-    else
-      false
-    end
-  end
-
-  def check_for_vowels
-    if @word_array_1.to_s.include?("a,e,i,o,u")
-      words_to_test.check_if_anagram
-    else
-      "Please enter a real word!"
+    downcase_string_1 = @word_array_1.sort.join("")
+    downcase_string_2 = @word_array_2.sort.join("")
+    print downcase_string_1
+    print downcase_string_2
+    if (downcase_string_1.include?(/[aeoui]/) && downcase_string_2.include?(/[aeoui]/))
+      if downcase_string_1 == downcase_array_2
+        true
+      else
+        false
+      end
     end
   end
 end

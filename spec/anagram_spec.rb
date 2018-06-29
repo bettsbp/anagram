@@ -2,7 +2,7 @@ require("rspec")
 require("pry")
 require("anagram")
 
-describe("Anigram#check_if_anagram") do
+describe("Anagram#check_if_anagram") do
   it("will see if ruby is an anagram of bury and return true") do
     words_to_test = Words.new("ruby","bury")
     expect(words_to_test.check_if_anagram).to(eq(true))
@@ -17,6 +17,6 @@ describe("Anigram#check_if_anagram") do
   end
   it("will see if the words have vowels") do
     words_to_test = Words.new("blop","cwtsh")
-    expect(words_to_test.check_for_vowels).to(eq("Please enter a real word!"))
+    expect(words_to_test.check_if_anagram).to(eq("Please enter a real word!"))
   end
 end
