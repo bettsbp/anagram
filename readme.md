@@ -1,4 +1,4 @@
-# Anigram/Antigram
+# Anagram/Antigram
 
 #### Epicodus Ruby: 06/29/2018
 
