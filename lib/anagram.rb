@@ -17,8 +17,11 @@ class Words
       print "Anagram found!"
       true
     else
-      print "No anagram found"
-      false
+      "These words are antigrams"
     end
   end
+
+  def check_for_vowels
+  end
+
 end
