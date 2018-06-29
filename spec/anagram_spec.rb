@@ -15,8 +15,8 @@ describe("Anigram#check_if_anagram") do
     words_to_test = Words.new("rUBy","Bury")
     expect(words_to_test.check_if_anagram).to(eq(true))
   end
-  it("will see if the words inputted are indeed actual words using a vowel check") do
-    words_to_test = Words.new("rUBy","Bury")
-    expect(words_to_test.check_if_anagram).to(eq(true))
+  it("will see if the words have vowels") do
+    words_to_test = Words.new("blop","cwtsh")
+    expect(words_to_test.check_for_vowels).to(eq("Please enter a real word!"))
   end
 end

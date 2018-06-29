@@ -6,8 +6,6 @@ class Words
     # this is what im using currently
     @word_array_1 = @input_word_1.split("")
     @word_array_2 = @input_word_2.split("")
-    # vowels list
-    @vowels = ["a", "e", "i", "o", "u"]
   end
 
   # first method
@@ -19,6 +17,14 @@ class Words
       true
     else
       false
+    end
+  end
+
+  def check_for_vowels
+    if @word_array_1.to_s.include?("a,e,i,o,u")
+      words_to_test.check_if_anagram
+    else
+      "Please enter a real word!"
     end
   end
 end
